@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <base href="/" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iAf2du</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript">
+
+    // Node-Webkit environment
+    if(typeof nw !== 'undefined'){
+      var win = nw.Window.get();
+
+      // NW.js fix
+      window.nw_global = window.global
+      window.global = undefined
+
+      var app = {
+        name : 'iAf2du'
+      }
+    }
+    </script>
+    <script src="lib/fdb-all.min.js"></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <main>
+        <div class="main">
+          <br />
+          <h1 style="border: none;font-weight: 100;padding: 2em 0 .25em 0">
+            iAf2du
+          </h1>
+          <h3 style="margin-top: 0;">
+            <img style="margin:3em auto" alt="Loading..." title="loading..." src="img/loader.gif">
+          </h3>
+          <small><small>Pronounced<br ></small> <code>I Have Todo</code></small>
+        </div>
+      </main>
+
+      <div style="-webkit-app-region: no-drag"></div>
+    </div>
+    <footer>
+      <div class="main" style="padding: .25em; margin: 0pt auto;font-size: 9pt;">
+        <div style="text-align: right;font-size: 10pt;">
+          <small style="display:inline-block;float:left;padding:0 3pt" >
+            <span style="color:#F44336;font-size:medium;">&hearts;</span>
+            v0.1
+          </small>
+          <small style="display:inline-block;" >
+            Handikraft
+            <span target="_" style="padding:2pt;cursor:pointer;color:slateblue" class="btn" title="http://twitter.com/jogboms">@jogboms</span>
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    <script src="lib/dep/es6-shim.min.js"></script>
+    <script src="lib/dep/traceur-runtime.js"></script>
+    <script src="lib/dep/system-polyfills.js"></script>
+    <script src="lib/dep/system.min.js"></script>
+    <script src="lib/dep/Reflect.min.js"></script>
+
+    <script type="text/javascript">
+      System.config({defaultJSExtensions: true});
+    </script>
+
+    <script src="lib/angular2-polyfills.min.js"></script>
+    <script src="lib/angular2.min.js"></script>
+    <script src="lib/Rx.min.js"></script>
+    <script src="lib/http.min.js"></script>
+    <script src="lib/router.min.js"></script>
+
+    <script>
+      System.import('js/bootstrap').catch(console.log.bind(console));
+    </script>
+
+  </body>
+</html>
