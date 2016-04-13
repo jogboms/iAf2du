@@ -5,4 +5,8 @@ A simple demonstration for Angular2, ForerunnerDB (an in-browser implementation 
 ## installation
 git clone the repository and simply ```npm install```
 
-requires an installed version of Node-Webkit (NWjs) to build to desktop and Inno setup was utilized for the generation of the downloadable/installable windows executable file.
+
+Requires an installed version of Node-Webkit (NWjs) to build to desktop and Inno setup was utilized for the generation of the downloadable/installable windows executable file.
+
+  + ``` gulp .``` to bootstrap the application
+  + ``` gulp dev``` to serve-up light server and watch files for changes
