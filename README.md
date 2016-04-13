@@ -1,5 +1,5 @@
 # iAf2du
-A simple demonstration for Angular2 and NW.js (node-webkit) 
+A simple demonstration for Angular2, ForerunnerDB (an in-browser implementation of MongoDB) and NW.js (node-webkit) 
 
 
 ## installation
